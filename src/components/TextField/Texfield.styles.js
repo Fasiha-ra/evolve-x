@@ -37,7 +37,7 @@ export const StyledTexfield = styled.div`
   ${({ $hasicon }) =>
     $hasicon &&
     css`
-      padding: 12px 50px;
+      padding: 8px 50px;
     `}
   textarea {
     font-size: 16px;
@@ -74,7 +74,7 @@ export const StyledTextareaWrap = styled.div`
 
 export const IconWrapper = styled.span`
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 20px;
   width: 25px;
   height: 25px;
@@ -98,7 +98,8 @@ export const StyledInput = styled.input`
   line-height: 24px;
   font-family: var(--base-font-sans-serif);
   &::placeholder {
-    color: rgba(242, 242, 242, 1);
+    color: var(--gray-50);
+    /* color: red; */
   }
   @media (min-width: 576px) {
     font-size: 16px;
@@ -151,10 +152,18 @@ export const OtpInputWrapper = styled.div`
   }
 `;
 export const SearchbarWrap = styled.div`
-  width: 100%;
-  max-width: 526px;
+  padding: 0 10px;
   .customClass {
     border-radius: 50px;
+    width: 100%;
+  max-width: 300px;
+  height: 40px;
+  @media (min-width: 576px){
+    max-width: 350px;
+  }
+  @media (min-width: 1440px){
+    max-width: 526px;
+  }
 
     input {
       color: black !important;

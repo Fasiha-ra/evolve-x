@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   font-weight: 400;
   line-height: 20px;
   border-radius: 30px;
-  background: linear-gradient(90deg, #0059C7 0%, #00A2C9 100%);
+  background: linear-gradient(90deg, #0059c7 0%, #00a2c9 100%);
   outline: none;
   border: none;
   transition: 0.3s all ease-in-out;
@@ -22,57 +22,31 @@ export const StyledButton = styled.button`
     padding: 12px 15px;
     font-size: 14px;
   }
-  &::before {
-    content: " ";
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
-    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25) inset,
-      0px 6px 10px 0px rgba(245, 126, 42, 0.8),
-      0px 4px 5px 0px rgba(255, 255, 255, 0.45) inset;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s linear;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
   &:hover {
     /* color: var(--white); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-    &::before {
-      opacity: 1;
-      visibility: visible;
-      top: -1px;
-    }
-    /* img {
-      filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(20deg)
-        brightness(103%) contrast(101%);
-    } */
   }
 
   ${({ type }) =>
     type === "transparent" &&
     css`
-    background: transparent;
-    color: var(--primary-text-color);
+      background: transparent;
+      color: var(--primary-text-color);
       border: none;
       outline: none;
       justify-content: start;
-     padding: 0;
-      
+      padding: 0;
+      &:hover {
+        box-shadow: none;
+      }
     `}
   ${({ type }) =>
-    type === "primary" &&
+    type === "outline" &&
     css`
       position: relative;
-      background: var(--primary);
-      color: var(--white);
+      background: var(--white);
+      color: var(--black);
+      border: 1px solid var(--light-gray);
       overflow: hidden;
     `}
   ${({ type }) =>
@@ -82,24 +56,13 @@ export const StyledButton = styled.button`
       color: var(--dark);
     `}
   ${({ type }) =>
-    type === "danger" &&
+    type === "dark" &&
     css`
-      background: var(--danger);
+      background: var(--blue);
       color: var(--white);
     `}
-    ${({ type }) =>
-    type === "secondary" &&
-    css`
-      background: #cdcdcd;
-      color: var(--white);
-    `}
-    /* ${({ type }) =>
-    type === "transparent" &&
-    css`
-      background: transparent;
-      color: var(--primary);
-      border: 2px solid var(--primary);
-    `} */
+ 
+ 
   ${({ $xl }) =>
     $xl &&
     css`

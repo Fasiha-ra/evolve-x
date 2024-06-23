@@ -8,9 +8,11 @@ export const GlobalStyles = createGlobalStyle`
     --body-color: #F8FDFF;
     --white: #fff;
     --black: #141416;
+    --blue:#0189E1;
     --light-gray: #8C8C8C;
     --light-green:#F0FFF0;
     --gray-50:#D9D9D9;
+    --gray-30:#9F9F9F;
     --secondary: #141416;
     
     --body-text: #141416;
@@ -60,7 +62,12 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     padding: 0 20px;
   }
-
+.headingWrap{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-blue);
+  padding: 0 15px;
+}
   .overlay {
     position: fixed;
     top: 0;
@@ -162,7 +169,7 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--body-text);
     font-weight: 400;
   }
-  h1,
+  /* h1,
   .h1 {
     font-size: 28px;
     line-height: 32px;
@@ -194,14 +201,30 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 45px;
         line-height: 49px;
     }
-  }
+  }*/
   h3,
   .h3 {
-    font-size: 26px;
-    line-height: 30px;
-  }
+    font-size: 20px;
+    line-height: 24px;
+    @media (min-width: 992px){
+      font-size: 24px;
+    line-height: 28px;
+    }
+  } 
   h4,
   .h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  h5,
+  .h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  h5,
+  .h5 {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;

@@ -38,9 +38,9 @@ const TextField = ({
         $variant={variant}
         $noMargin={noMargin}
         className={parentClass}
-        $bgClr = {bgClr}
-        $border = {border}
-        >
+        $bgClr={bgClr}
+        $border={border}
+      >
         <IconWrapper>{hasicon}</IconWrapper>
         {variant === "input" && (
           <StyledInput
@@ -50,17 +50,20 @@ const TextField = ({
             onChange={onChange}
             value={value}
             id={field_Name}
+            autoComplete="off"
           />
         )}
 
-        {variant == "textarea" && (
+        {variant === "textarea" && (
           <textarea
             {...props}
             type={type}
             placeholder={placeholder}
             onChange={onChange}
             value={value}
-            id={field_Name}></textarea>
+            id={field_Name}
+            autoComplete="off"
+          ></textarea>
         )}
       </StyledTexfield>
     </InputWrap>
