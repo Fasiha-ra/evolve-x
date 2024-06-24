@@ -30,15 +30,8 @@ const Header = ({ toggleSidebar }) => {
         <NavigationWrap $navActive={showNav}>
           {navLinks.map((value, index) => (
             <li key={index}>
-              {/* <Link to={value.link}>
-                <div className="item">
-                  {/* <img src={value.icon} alt={value.icon} />  
-                 <div className="icons"> {value.icon}</div>{value.title}
-                </div>
-              </Link> */}
               <Link to={value.link} className={location.pathname === value.link ? "item active" : "item"}>
               <div className="item">
-                   {/* <img src={value.icon} alt={value.icon} />   */}
                  <div className="icons"> {value.icon}</div>{value.title}
                 </div>
               </Link>

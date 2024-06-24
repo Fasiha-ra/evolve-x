@@ -31,39 +31,14 @@ export const MainLayoutSection = styled.div`
         max-width: 430px;
       }
     }
-
-    .flex {
-      display: block;
-
-      @media (min-width: 1200px) {
-        display: flex;
-        flex: 1;
-      }
-    }
-
     .mainContent {
-      padding: 30px 10px 0 10px;
+      padding: 10px 10px 0 10px;
       flex-grow: 0;
-
+      @media (min-width: 576px) {
+        padding: 30px 10px 0 10px;
+      }
       @media (min-width: 1440px) {
         flex-grow: 1;
-      }
-    }
-
-    .rightSideBar {
-      padding-top: 30px;
-      width: 100%;
-
-      @media (min-width: 1200px) {
-        max-width: 280px;
-      }
-
-      @media (min-width: 1360px) {
-        max-width: 360px;
-      }
-
-      @media (min-width: 1440px) {
-        max-width: 430px;
       }
     }
   }
@@ -71,7 +46,8 @@ export const MainLayoutSection = styled.div`
   @media (max-width: 992px) {
     .mainSidebarContent {
       .mainSidebar {
-        display: ${({ $sidebarVisible }) => ($sidebarVisible ? "block" : "none")};
+        display: ${({ $sidebarVisible }) =>
+          $sidebarVisible ? "block" : "none"};
         position: fixed;
         left: 0;
         top: 94px;
@@ -93,6 +69,19 @@ export const MainLayoutSection = styled.div`
       }
     }
   }
+  .rightSideBar {
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      max-width: 280px;
+    }
+
+    @media (min-width: 1360px) {
+      max-width: 360px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 430px;
+    }
+  }
 `;
-
-

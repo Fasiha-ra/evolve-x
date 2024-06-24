@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
- 
+
 export const GlobalStyles = createGlobalStyle`
   :root {
     --primary-blue: #58A7E0;
@@ -47,8 +47,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: var(--base-text-color);
-    font: var(--font-size-base) / var(--line-height-base)
-      var(--base-font-family);
     font-weight: 300;
     position: relative;
     min-width: var(--base-min-width);
@@ -169,39 +167,6 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--body-text);
     font-weight: 400;
   }
-  /* h1,
-  .h1 {
-    font-size: 28px;
-    line-height: 32px;
-    font-weight: 700;
-   
-    @media screen and (min-width: 768px){
-    font-size: 40px;
-    line-height: 44px;
-    }
-    @media screen and (min-width: 992px){
-    font-size: 50px;
-    line-height: 54px;
-    }
-    @media screen and (min-width: 1200px){
-       font-size: 60px;
-    line-height: 64px;
-    }
-  }
-  h2,
-  .h2 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 400;
-    @media screen and (min-width: 768px){
-    font-size: 35px;
-    line-height: 40px;
-    }
-    @media screen and (min-width: 1200px){
-        font-size: 45px;
-        line-height: 49px;
-    }
-  }*/
   h3,
   .h3 {
     font-size: 20px;

@@ -16,9 +16,6 @@ export const ProfileWrap = styled.div`
     text-align: center;
     padding: 10px 0 20px;
     border-bottom: 1px solid var(--light-gray);
-    h4{
-        /* margin: 0; */
-    }
     p{
         color: var(--light-gray);
     }

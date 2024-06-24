@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const FooterWrap= styled.div`
 background-color: var(--white);
 border-radius: 25px;
-box-shadow: 0 1 3 0 rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 padding: 20px 10px;
 ul{
     display: flex;

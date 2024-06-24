@@ -15,9 +15,6 @@ export const BlogWrap = styled.div`
         display: flex;
         gap: 10px;
         .titleHolder {
-          h5 {
-            /* margin: 0; */
-          }
           .tags {
             display: flex;
             gap: 10px;
@@ -53,9 +50,7 @@ export const BlogWrap = styled.div`
       }
       button {
         min-width: 90px;
-        /* justify-content: center; */
         font-size: 14px;
-
         color: var(--light-gray);
         &:nth-child(2) {
           min-width: 100px;

@@ -35,6 +35,7 @@ const SignUp = () => {
             </div>
             <div className="inputHolder">
               <TextField
+              parentClass="emailWrapper"
                 className="input-field"
                 field_Name="email"
                 type="email"

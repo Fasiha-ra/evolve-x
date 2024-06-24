@@ -6,7 +6,7 @@ export const ModalHolder = styled.div`
     position: absolute;
     top: 18px;
     left: 49px;
-z-index: 1;
+    z-index: 1;
     background-color: var(--blue);
     padding: 10px;
     color: var(--white);

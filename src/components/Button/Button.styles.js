@@ -17,13 +17,11 @@ export const StyledButton = styled.button`
   border: none;
   transition: 0.3s all ease-in-out;
   position: relative;
-  /* z-index: 1; */
   @media (max-width: 575px) {
     padding: 12px 15px;
     font-size: 14px;
   }
   &:hover {
-    /* color: var(--white); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 

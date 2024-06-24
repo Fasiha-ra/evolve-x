@@ -89,7 +89,6 @@ const UploadProfile = () => {
               value={formData.lastName}
               onChange={handleInputChange}
             />
-            {/* <Select /> */}
             <div className="selectHolder">
               <label htmlFor="Designation">Designation *</label>
 

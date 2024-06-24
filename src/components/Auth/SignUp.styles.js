@@ -26,7 +26,6 @@ export const SignUpWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 734px; */
     margin: 0 auto;
     form {
       .textHolder {
@@ -78,5 +77,12 @@ export const SignUpWrapper = styled.div`
         margin: 0 auto;
       }
     }
+  }
+  .emailWrapper{
+    width: 100%;
+    @media (min-width: 1440px){
+      width: 734px;
+    }
+    
   }
 `;

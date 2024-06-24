@@ -95,6 +95,37 @@ export const Enroll = [
     title: "Tech Stack Specialization",
     name: "By Sarah Connor ",
   },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  {
+    img: enrollimg,
+    title: "Tech Stack Specialization",
+    name: "By Sarah Connor ",
+  },
+  
 ];
 export const coachingProfile = [
   {
@@ -280,3 +311,63 @@ export const BlogData = [
       "The saying “an emergency on your part does not constitute an emergency on mine” is such a terrible thing to think.The saying “an emergency on your part does not constitute an emergency on mine” is such a terrible thing to think.",
   },
 ];
+export const FeedCaochingCategory = [
+{
+  img: coaching1,
+  title:"Talent Management"
+},
+{
+  img: coaching2,
+  title:"Talent Management"
+},
+];
+export const FeedCaochProfile =[
+  {
+    img:profile,
+    title:"Rahul Wagh",
+    subTitle:"Talent Management",
+    review:50,
+  },
+  {
+    img:profile,
+    title:"Rahul Wagh",
+    subTitle:"Talent Management",
+    review:50,
+  },
+  {
+    img:profile,
+    title:"Rahul Wagh",
+    subTitle:"Talent Management",
+    review:50,
+  },
+]
+export const UpcomingSessionData = [
+  {
+    img:enrollimg,
+    title:"Tech Stack Specialization & Work",
+  },
+  {
+    img:enrollimg,
+    title:"Tech Stack Specialization & Work",
+  },
+]
+export const GroupSessionData = [
+  {
+    title:"Tech Stack Specialization & Work-like Develop..By",
+    name:"Sarah Connor",  
+  },
+  {
+    title:"Tech Stack Specialization & Work-like Develop..By",
+    name:"Sarah Connor",    
+  },
+]
+export const TrendingSessionData =[
+  {
+    img: img1,
+    title:"Time Management Ideas",
+  },
+  {
+    img: img1,
+    title:"Time Management Ideas",
+  },
+]

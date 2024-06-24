@@ -22,7 +22,6 @@ export const InputWrap = styled.div`
 export const StyledTexfield = styled.div`
   padding: 12px 25px;
   border-radius: ${({ $variant }) => ($variant === "input" ? "10px" : "20px")};
-  /* background: rgba(255, 255, 255, 0.37); */
   background-color: ${({ $bgClr }) => $bgClr && $bgClr};
   border: 1px solid ${({ $border }) => $border && $border};
   box-shadow: rgba(0, 0, 0, 0.09) 0 0 2px 1px;
@@ -31,9 +30,7 @@ export const StyledTexfield = styled.div`
   box-sizing: border-box;
   width: 100%;
   margin-bottom: ${({ $noMargin }) => ($noMargin ? "0" : "15px")};
-  /* &:focus {
-    border: 1px solid var(--primary);
-  } */
+  
   ${({ $hasicon }) =>
     $hasicon &&
     css`
@@ -82,6 +79,7 @@ export const IconWrapper = styled.span`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  color: var(--primary-blue);
   img {
     max-width: 100%;
     height: auto;
@@ -99,7 +97,6 @@ export const StyledInput = styled.input`
   font-family: var(--base-font-sans-serif);
   &::placeholder {
     color: var(--gray-50);
-    /* color: red; */
   }
   @media (min-width: 576px) {
     font-size: 16px;
@@ -120,7 +117,6 @@ export const StyledTextarea = styled.textarea`
   }
 `;
 export const OtpInputWrapper = styled.div`
-  /* padding: 20px 0; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -156,14 +152,14 @@ export const SearchbarWrap = styled.div`
   .customClass {
     border-radius: 50px;
     width: 100%;
-  max-width: 300px;
-  height: 40px;
-  @media (min-width: 576px){
-    max-width: 350px;
-  }
-  @media (min-width: 1440px){
-    max-width: 526px;
-  }
+    max-width: 300px;
+    height: 40px;
+    @media (min-width: 576px) {
+      max-width: 350px;
+    }
+    @media (min-width: 1440px) {
+      max-width: 526px;
+    }
 
     input {
       color: black !important;

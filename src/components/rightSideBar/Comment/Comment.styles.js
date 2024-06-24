@@ -11,13 +11,14 @@ background-color: var(--white);
     padding: 10px 10px 20px;
   }
   .questionWrap{
+  
     display: flex;
-    /* gap: 60px; */
     justify-content: space-evenly;
-    @media (min-width: 1200px){
-      justify-content: space-between;
+    button{
+      @media (min-width: 1200px) and (max-width:1440px){
+      font-size: 14px;
+     }
     }
-    
     .questionSec{
         display: flex;
         gap: 2px;

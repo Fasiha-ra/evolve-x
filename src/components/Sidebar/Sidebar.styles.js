@@ -8,7 +8,6 @@ export const SidebarWrapper = styled.div`
   }
   ::-webkit-scrollbar {
     width: 0;
-    /* height: 20px; */
   }
 
   /* Track */

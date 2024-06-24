@@ -2,7 +2,6 @@ import styled from "styled-components";
 export const ProfileWrap = styled.div`
   background-color: var(--primary-darkblue);
   color: var(--white);
-  /* height: 100vh; */
   padding: 80px 0;
   .container {
     max-width: 1574px;

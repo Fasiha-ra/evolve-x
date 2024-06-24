@@ -128,7 +128,6 @@ export const NavigationWrap = styled.ul`
     margin-top: 26px;
     top: 91px;
     max-height: 0px;
-    /* left: 0; */
     right: 0;
     padding: 5px;
     border-radius: 0px;
@@ -144,7 +143,6 @@ export const NavigationWrap = styled.ul`
         opacity: 1;
         padding: 50px 100px;
         position: fixed;
-        /* width: 100%; */
         width: 350px;
       `}
   }

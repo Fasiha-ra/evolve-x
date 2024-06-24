@@ -1,7 +1,6 @@
 import React from "react";
 import { ProfileWrap } from "./Profile.styles";
 import { FaRegEdit } from "react-icons/fa";
-// import { CiCamera } from "react-icons/ci";
 import imgIcon from "../../../assets/profile/imgIcon.png";
 import Icon from "../../../assets/profile/icon.png";
 import { Link } from "react-router-dom";
@@ -9,12 +8,11 @@ const Profile = () => {
   return (
     <ProfileWrap>
       <div className="editHolder">
-        <Link>
+        <Link to="/UpdateProfile">
           <FaRegEdit />
         </Link>
       </div>
       <div className="imgHolder">
-        {/* <CiCamera /> */}
         <img src={imgIcon} alt="icon"></img>
       </div>
       <div className="textHolder">
