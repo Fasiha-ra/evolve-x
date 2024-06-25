@@ -42,39 +42,32 @@ export const BlogWrap = styled.div`
     }
     .replyWrap {
       padding: 20px 0 0;
-      display: inline-flex;
+      display: flex;
       justify-content: start;
-      gap: 10px;
-      @media (min-width: 1440px) {
-        gap: 20px;
+      gap: 40px;
+      @media (min-width: 1200px) {
+        justify-content: space-evenly;
+        gap: 10px;
       }
       button {
-        min-width: 90px;
         font-size: 14px;
         color: var(--light-gray);
-        &:nth-child(2) {
-          min-width: 100px;
-          @media (min-width: 1200px) {
-            min-width: 70px;
-          }
-        }
-        @media (min-width: 1200px) {
-          min-width: 40px;
-        }
-        @media (min-width: 1440px) {
-          font-size: 18px;
-          min-width: 90px;
-          gap: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+          width: 15px;
+          height: 15px;
         }
       }
     }
-  }
-  .postBtn {
-    button {
-      display: flex;
-      justify-content: center;
-      font-size: 20px;
-      font-weight: 500;
+    .postBtn {
+      button {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 500;
+      }
     }
   }
 `;

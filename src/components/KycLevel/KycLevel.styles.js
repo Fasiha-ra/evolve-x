@@ -6,7 +6,7 @@ export const StyledKycLevel = styled.div`
   width: 100%;
   max-width: 500px;
   position: relative;
-  height: 30px;
+  height: 40px;
   background: #EAEAEA;
   overflow: hidden;
   

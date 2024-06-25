@@ -21,8 +21,17 @@ background-color: var(--white);
     }
     .questionSec{
         display: flex;
-        gap: 2px;
+        gap: 5px;
         align-items: center;
+        font-size: 14px;
+        @media (min-width: 1240px){
+          font-size: 13px;
+          gap: 3px;
+        }
+        /* @media (min-width: 1440px){
+          font-size: 16px;
+          gap: 8px;
+        } */
         img{
             width: 18px;
         }

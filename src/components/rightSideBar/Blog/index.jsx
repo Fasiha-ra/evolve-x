@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { BlogWrap } from "./Blog.styles";
 import Button from "../../Button";
-import { AiOutlineLike } from "react-icons/ai";
-import { TfiCommentAlt } from "react-icons/tfi";
-import { CiFlag1 } from "react-icons/ci";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BlogData } from '../../Constant/Data';
-
+import like from "../../../assets/blog/like.png";
+import comment from "../../../assets/blog/comment.png";
+import report from "../../../assets/blog/report.png";
 const Blog = () => {
   const [expandedPosts, setExpandedPosts] = useState({});
 
@@ -45,18 +44,18 @@ const Blog = () => {
             </Button>
           </div>
           <div className="replyWrap">
-            <Button hasicon type="transparent" className="reply">
-              <AiOutlineLike />
+            <button className="reply">
+              <img src={like} alt="like" />
               Like
-            </Button>
-            <Button hasicon type="transparent" className="reply">
-              <TfiCommentAlt />
+            </button>
+            <button className="reply">
+              <img src={comment} alt="comment" />
               Comment
-            </Button>
-            <Button hasicon type="transparent" className="reply">
-              <CiFlag1 />
+            </button>
+            <button className="reply">
+              <img src={report} alt="report" />
               Report
-            </Button>
+            </button>
           </div>
         </div>
       ))}

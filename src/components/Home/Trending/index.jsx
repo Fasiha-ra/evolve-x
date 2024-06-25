@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import nextArrowImg from "../../../assets/home/trending/nextArrow.png"; // Path to your right arrow image
 import prevArrowImg from "../../../assets/home/trending/prevArrow.png"; // Path to your left arrow image
 
-const Trending = () => {
+const Trending = ({arrowsDirection}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -16,16 +16,17 @@ const Trending = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
+     
       {
-        breakpoint: 600,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
         },
-      },
+      }
     ],
   };
   return (
-    <TrendingWrap>
+    <TrendingWrap  $arrowsDirection={arrowsDirection}>
       <strong className="headingWrap">Trending Sessions</strong>
       <Slider {...settings}>
         {TrendingData.map((value, index) => (

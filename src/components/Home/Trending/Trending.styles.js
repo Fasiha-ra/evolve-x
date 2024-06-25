@@ -46,7 +46,7 @@ export const TrendingWrap = styled.div`
   @media (min-width: 1600px){
     max-width: 1000px;
   }
-  @media (min-width: 1700px){
+  @media (min-width: 1700px){ 
     max-width: 1039px;
   }
   /* height: auto; */

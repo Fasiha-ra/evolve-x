@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const HomeWrap = styled.div`
+
   display: block;
   @media (min-width: 1200px) {
     display: flex;
